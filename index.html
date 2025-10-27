@@ -6,11 +6,65 @@
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
     <title>Pet&Style | Página Oficial</title>
 
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- TAILWIND CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- TAILWIND CLI -->
     <link rel="stylesheet" href="./CSS/output.css" />
   </head>
-  <body></body>
+
+  <body class="font-popins">
+    <!-- NAVBAR -->
+    <nav
+      class="bg-gray-100 relative z-50 px-25 py-1 flex justify-between items-center"
+    >
+      <!-- LOGO -->
+      <img src="./assets/logo.png" class="w-30" alt="Logo da nossa loja" />
+
+      <!-- NAV -->
+      <ul id="nav" class="w-auto sm:hidden lg:flex space-x-14 font-normal">
+        <li class="hover:font-semibold"><a href="#home">Home</a></li>
+        <li class="hover:font-semibold"><a href="#about">Sobre</a></li>
+        <li class="hover:font-semibold"><a href="#service">Serviços</a></li>
+        <li class="hover:font-semibold">
+          <a href="#depoiments">Depoimentos</a>
+        </li>
+        <li class="hover:font-semibold"><a href="#contact">Contato</a></li>
+      </ul>
+
+      <!-- NAV RESPONSIVO -->
+      <button
+        id="btn-nav"
+        class="cursor-pointer bg-gray-50 rounded-[10px] shadow-md w-10 h-10 focus:outline-none transition-transform duration-500 ease-in-out lg:hidden"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- NAV MOBILE -->
+      <ul
+        id="nav-mobile"
+        class="hidden bg-gray-100 shadow-md flex flex-col items-center space-y-4 py-4 absolute top-[127px] left-0 w-full z-40"
+      >
+        <li class="hover:font-semibold"><a href="#home">Home</a></li>
+        <li class="hover:font-semibold"><a href="#about">Sobre</a></li>
+        <li class="hover:font-semibold"><a href="#service">Serviços</a></li>
+        <li class="hover:font-semibold">
+          <a href="#depoiments">Depoimentos</a>
+        </li>
+        <li class="hover:font-semibold"><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+
+    <!-- JS -->
+    <script src="./JS/script.js"></script>
+  </body>
 </html>
